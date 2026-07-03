@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Donate — Murogolo Primary School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  </head><body style="background:#f7f4ee">
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">🏫</div>
+        <div><div class="nav-name">Murogolo</div><div class="nav-sub">PRIMARY SCHOOL</div></div>
+      </a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="academics.html">Academics</a>
+        <a href="activities.html">Activities</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact</a>
+        <a href="donate.html" class="active nav-donate">❤ Donate</a><a href="admissions.html" class="btn-apply">Apply Now</a>
+      </div>
+    </div>
+  </nav>
+  <section style="background:#1B2F6B;position:relative;overflow:hidden">
+    <div style="position:absolute;right:-80px;top:-80px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(201,162,39,.1);pointer-events:none"></div>
+    <div class="container" style="padding:80px 24px 60px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center" id="donateHeroGrid">
+      <div>
+        <span style="display:inline-block;background:#c9a227;color:#111f4d;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 14px;border-radius:4px;margin-bottom:24px">Every rand reaches a child</span>
+        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:900;color:#fff;line-height:1.08;margin-bottom:24px">Give a child a<br><span style="color:#c9a227">fighting chance.</span></h1>
+        <p style="color:rgba(255,255,255,.65);font-size:16px;line-height:1.75;max-width:420px">Murogolo Primary School runs on community support. Books, uniforms, meals, sports — none of it happens without people like you stepping up.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        
+        <div style="background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.3);border-radius:8px;padding:22px 18px">
+          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">Grade R–7</p>
+          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Full primary journey</p>
+        </div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.3);border-radius:8px;padding:22px 18px">
+          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">8</p>
+          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Learning areas taught</p>
+        </div>
+        <div style="background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.3);border-radius:8px;padding:22px 18px">
+          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">100%</p>
+          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Community school</p>
+        </div>
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(201,162,39,.3);border-radius:8px;padding:22px 18px">
+          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">Ha Muila</p>
+          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Village, Limpopo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" style="padding:64px 24px">
+    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:start" id="donateFormGrid">
+      <div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:#111f4d;margin-bottom:6px">How much are you giving?</h2>
+        <p style="font-size:13px;color:#6b7280;margin-bottom:20px">Pick an amount or type your own below.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px">
+          <button type="button" onclick="selectAmount(50,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R50</button><button type="button" onclick="selectAmount(100,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R100</button><button type="button" onclick="selectAmount(150,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R150</button><button type="button" onclick="selectAmount(300,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R300</button><button type="button" onclick="selectAmount(500,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R500</button><button type="button" onclick="selectAmount(1000,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R1000</button>
+        </div>
+        <div style="position:relative;margin-bottom:36px">
+          <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);font-weight:800;color:#9ca3af;font-size:17px">R</span>
+          <input type="number" min="10" placeholder="Other Amount" id="customAmount" style="width:100%;padding:15px 16px 15px 34px;border:2px solid #e5e7eb;border-radius:6px;font-size:16px;font-weight:600;outline:none;background:#fff;color:#111f4d;box-sizing:border-box">
+        </div>
+
+        <h2 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:#111f4d;margin-bottom:18px">Payment Method</h2>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px">
+          
+          <button type="button" onclick="selectMethod(this)" class="method-btn" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px 16px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;cursor:pointer">
+            <span style="font-size:22px">💳</span><span style="font-weight:700;font-size:15px;color:#374151">Credit / Debit</span><span style="font-size:12px;color:#9ca3af">Visa, Mastercard</span>
+          </button>
+          <button type="button" onclick="selectMethod(this)" class="method-btn" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px 16px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;cursor:pointer">
+            <span style="font-size:22px">🏦</span><span style="font-weight:700;font-size:15px;color:#374151">Instant EFT</span><span style="font-size:12px;color:#9ca3af">Secure bank transfer</span>
+          </button>
+          <button type="button" onclick="selectMethod(this)" class="method-btn" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px 16px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;cursor:pointer">
+            <span style="font-size:22px">📱</span><span style="font-weight:700;font-size:15px;color:#374151">SnapScan / Zapper</span><span style="font-size:12px;color:#9ca3af">Scan & pay instantly</span>
+          </button>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px">
+          <input type="text" required placeholder="Full Name" id="donorName" style="padding:14px 16px;border:2px solid #e5e7eb;border-radius:6px;font-size:15px;outline:none;background:#fff;color:#111f4d">
+          <input type="email" required placeholder="Email Address" id="donorEmail" style="padding:14px 16px;border:2px solid #e5e7eb;border-radius:6px;font-size:15px;outline:none;background:#fff;color:#111f4d">
+        </div>
+
+        <button type="button" onclick="submitDonation()" style="width:100%;padding:18px 24px;background:#1B2F6B;color:#fff;font-weight:800;font-size:17px;border-radius:8px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px">Proceed to Secure Payment →</button>
+        <div style="display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px">
+          <span style="font-size:12px;color:#6b7280">🔒 Secure 256-bit encrypted payment processing</span>
+        </div>
+        <div id="thankYou" style="display:none;background:#1B2F6B;border-radius:12px;padding:56px 40px;text-align:center;margin-top:20px">
+          <div style="width:72px;height:72px;border-radius:50%;background:rgba(201,162,39,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:32px">✓</div>
+          <h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:900;color:#fff;margin-bottom:12px" id="thankYouName">Thank you.</h2>
+          <p style="color:rgba(255,255,255,.65);font-size:16px;line-height:1.7;margin-bottom:24px" id="thankYouMsg"></p>
+          <p style="font-family:'Playfair Display',serif;font-style:italic;color:#c9a227;font-size:17px">"Learning Today, Leading Tomorrow."</p>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #1B2F6B;border-radius:10px;padding:28px">
+          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:800;color:#1B2F6B;margin-bottom:16px">School Bank Account</h3>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Bank:</span><span style="font-weight:700;color:#111f4d">FNB (First National Bank)</span></div><div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Acc Name:</span><span style="font-weight:700;color:#111f4d">Murogolo Primary School</span></div><div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Acc Number:</span><span style="font-weight:700;color:#111f4d">62345678901</span></div><div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Branch Code:</span><span style="font-weight:700;color:#111f4d">250655</span></div>
+          </div>
+        </div>
+        <div style="background:#eef5ee;border-left:4px solid #16a34a;border-radius:10px;padding:24px 28px">
+          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:800;color:#15532e;margin-bottom:10px">Resource Donations</h3>
+          <p style="font-size:14px;color:#374151;line-height:1.65">We also welcome donations of books, stationery, sports equipment, and school uniforms. Please contact the office for physical drop-offs.</p>
+          <p style="font-size:12px;color:#6b7280;margin-top:14px">📚 Books · ✏️ Stationery · ⚽ Sports · 👕 Uniforms</p>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:28px;border:1px solid #e5e7eb">
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:#111f4d;margin-bottom:20px">Your Impact</h3>
+          <div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
+            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">1</div>
+            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Learning Materials</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Providing textbooks and stationery for our learners.</p></div>
+          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
+            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">2</div>
+            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Sporting Equipment</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Upgrading our soccer and netball facilities.</p></div>
+          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
+            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">3</div>
+            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">School Nutrition</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Supporting our daily meals for learners in need.</p></div>
+          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
+            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">4</div>
+            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Infrastructure</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Maintaining classrooms and school buildings.</p></div>
+          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
+            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">5</div>
+            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">School Uniforms</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Clothing learners who cannot afford uniforms.</p></div>
+          </div><div style="display:flex;gap:16px;padding:16px 0;">
+            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">6</div>
+            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Digital Access</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Bringing technology and learning tools to classrooms.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  let selAmount=null, selMethod=null;
+  function selectAmount(a,el){
+    selAmount=a; document.getElementById('customAmount').value='';
+    document.querySelectorAll('.amount-btn').forEach(b=>{b.style.border='2px solid #e5e7eb';b.style.background='#fff';b.style.color='#111f4d'});
+    el.style.border='2px solid #1B2F6B'; el.style.background='#1B2F6B'; el.style.color='#fff';
+  }
+  function selectMethod(el){
+    selMethod=el;
+    document.querySelectorAll('.method-btn').forEach(b=>{b.style.border='2px solid #e5e7eb';b.style.background='#fff'});
+    el.style.border='2px solid #1B2F6B'; el.style.background='#e8edf8';
+  }
+  function submitDonation(){
+    const custom=document.getElementById('customAmount').value;
+    const amt=selAmount || (custom?Number(custom):null);
+    const name=document.getElementById('donorName').value;
+    const email=document.getElementById('donorEmail').value;
+    if(!amt||!selMethod||!name||!email){ alert('Please complete all fields, choose an amount and payment method.'); return; }
+    document.getElementById('thankYouName').textContent='Thank you, '+name.split(' ')[0]+'.';
+    document.getElementById('thankYouMsg').innerHTML='Your donation of <strong style="color:#c9a227">R'+amt+'</strong> is making a real difference. Our team will be in touch with payment confirmation shortly.';
+    document.getElementById('thankYou').style.display='block';
+    document.getElementById('thankYou').scrollIntoView({behavior:'smooth'});
+  }
+  </script>
+
+  <section style="background:#111f4d;padding:40px 32px;text-align:center">
+    <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">Together, we can give every child in Ha Muila Village the education they deserve.</p>
+  </section>
+
+  <style>
+  @media(max-width:768px){ #donateHeroGrid, #donateFormGrid { grid-template-columns:1fr!important; } }
+  </style>
+  <footer class="footer"><div class="footer-inner"><div><div class="footer-logo">Murogolo Primary School</div><p class="footer-motto">"Learning Today, Leading Tomorrow."</p></div><div class="footer-info"><p>📍 Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo</p><p>📞 082 668 8165</p></div></div></footer></body></html>
