@@ -3,11 +3,44 @@
   <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Contact — Murogolo Primary School</title>
+    <meta name="description" content="Get in touch with Murogolo Primary School — address, phone number, operating hours and location map.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="canonical" href="https://sekgatla.github.io/Murogolo/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact — Murogolo Primary School">
+    <meta property="og:description" content="Get in touch with Murogolo Primary School — address, phone number, operating hours and location map.">
+    <meta property="og:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
+    <meta property="og:url" content="https://sekgatla.github.io/Murogolo/contact.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact — Murogolo Primary School">
+    <meta name="twitter:description" content="Get in touch with Murogolo Primary School — address, phone number, operating hours and location map.">
+    <meta name="twitter:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  </head><body>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "School",
+    "name": "Murogolo Primary School",
+    "description": "A community primary school serving Grade R to Grade 7 learners in Ha Muila Village, Limpopo, South Africa.",
+    "url": "https://sekgatla.github.io/Murogolo/",
+    "logo": "https://sekgatla.github.io/Murogolo/images/favicon.svg",
+    "image": "https://sekgatla.github.io/Murogolo/images/opengraph.jpg",
+    "telephone": "+27826688165",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ha Muila Village, Kwaaidraai",
+      "addressLocality": "Tshitale, Makhado",
+      "addressRegion": "Limpopo",
+      "addressCountry": "ZA"
+    },
+    "openingHours": "Mo-Fr 07:30-14:30"
+  }
+  </script>
+</head><body>
   <nav class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
@@ -53,6 +86,27 @@
       </div>
     </div>
   </section>
+  <section class="section section-light">
+    <div class="container" style="max-width:760px">
+      <div style="text-align:center;margin-bottom:48px">
+        <h2 class="heading serif">Send Us a Message</h2>
+        <div class="divider" style="margin:12px auto 20px"></div>
+        <p style="color:var(--muted);font-size:1.05rem">Have a question about admissions, activities or getting involved? Write to us directly.</p>
+      </div>
+      <form action="https://formsubmit.co/murogolo.primary@gmail.com" method="POST" style="display:flex;flex-direction:column;gap:20px;background:#fff;padding:48px;border-radius:20px;box-shadow:0 16px 48px rgba(0,0,0,.08)">
+        <input type="hidden" name="_subject" value="New message from Murogolo Primary School website">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <div class="grid2" style="gap:20px">
+          <input type="text" name="Name" required placeholder="Full Name" style="padding:16px;border:2px solid var(--border);border-radius:10px;font-size:1rem;font-family:inherit">
+          <input type="email" name="Email" required placeholder="Email Address" style="padding:16px;border:2px solid var(--border);border-radius:10px;font-size:1rem;font-family:inherit">
+        </div>
+        <input type="tel" name="Phone" placeholder="Phone Number (optional)" style="padding:16px;border:2px solid var(--border);border-radius:10px;font-size:1rem;font-family:inherit">
+        <textarea name="Message" required placeholder="Your Message" rows="6" style="padding:16px;border:2px solid var(--border);border-radius:10px;font-size:1rem;font-family:inherit;resize:vertical"></textarea>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start;border:none;cursor:pointer">Send Message →</button>
+      </form>
+    </div>
+  </section>
   <section class="section section-tint">
     <div class="container">
       <div style="text-align:center;margin-bottom:48px">
@@ -68,4 +122,28 @@
       </div>
     </div>
   </section>
-  <footer class="footer"><div class="footer-inner"><div><div class="footer-logo">Murogolo Primary School</div><p class="footer-motto">"Learning Today, Leading Tomorrow."</p></div><div class="footer-info"><p>📍 Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo</p><p>📞 082 668 8165 &nbsp;|&nbsp; Mon–Fri: 07:30–14:30</p><p style="margin-top:8px;opacity:.5;font-size:12px">© 2025 Murogolo Primary School</p></div></div></footer></body></html>
+  <footer class="footer"><div class="footer-inner"><div><div class="footer-logo">Murogolo Primary School</div><p class="footer-motto">"Learning Today, Leading Tomorrow."</p></div><div class="footer-info"><p>📍 Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo</p><p>📞 082 668 8165 &nbsp;|&nbsp; Mon–Fri: 07:30–14:30</p><p style="margin-top:8px;opacity:.5;font-size:12px">© 2025 Murogolo Primary School</p></div></div></footer>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelector('.nav-links');
+    if (!links) return;
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+    document.addEventListener('click', function(e) {
+      if (links.classList.contains('open') && !links.contains(e.target) && !e.target.closest('.nav-toggle')) {
+        links.classList.remove('open');
+      }
+    });
+  });
+  </script>
+<button class="back-to-top" id="backToTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+  (function(){
+    const btn = document.getElementById('backToTop');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 400) btn.classList.add('show'); else btn.classList.remove('show');
+    });
+  })();
+  </script>
+</body></html>
