@@ -1,144 +1,211 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>About — Murogolo Primary School</title>
-    <meta name="description" content="Learn about Murogolo Primary School's history, vision, mission, and core values rooted in Ha Muila Village, Limpopo.">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="canonical" href="https://sekgatla.github.io/Murogolo/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="About — Murogolo Primary School">
-    <meta property="og:description" content="Learn about Murogolo Primary School's history, vision, mission, and core values rooted in Ha Muila Village, Limpopo.">
-    <meta property="og:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
-    <meta property="og:url" content="https://sekgatla.github.io/Murogolo/about.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About — Murogolo Primary School">
-    <meta name="twitter:description" content="Learn about Murogolo Primary School's history, vision, mission, and core values rooted in Ha Muila Village, Limpopo.">
-    <meta name="twitter:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Murogolo Primary School</title>
+  <meta name="description" content="Learn about Murogolo Primary School's history, vision, mission, and core values rooted in Ha Muila Village, Limpopo.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="canonical" href="https://sekgatla.github.io/Murogolo/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Us — Murogolo Primary School">
+  <meta property="og:description" content="Learn about Murogolo Primary School's history, vision, mission, and core values rooted in Ha Muila Village, Limpopo.">
+  <meta property="og:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "School",
-    "name": "Murogolo Primary School",
-    "description": "A community primary school serving Grade R to Grade 7 learners in Ha Muila Village, Limpopo, South Africa.",
-    "url": "https://sekgatla.github.io/Murogolo/",
-    "logo": "https://sekgatla.github.io/Murogolo/images/favicon.svg",
-    "image": "https://sekgatla.github.io/Murogolo/images/opengraph.jpg",
-    "telephone": "+27826688165",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ha Muila Village, Kwaaidraai",
-      "addressLocality": "Tshitale, Makhado",
-      "addressRegion": "Limpopo",
-      "addressCountry": "ZA"
-    },
-    "openingHours": "Mo-Fr 07:30-14:30"
-  }
-  </script>
-</head><body>
-  <nav class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <div class="nav-logo">🏫</div>
-        <div><div class="nav-name">Murogolo</div><div class="nav-sub">PRIMARY SCHOOL</div></div>
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="activities.html">Activities</a>
-        <a href="admissions.html">Admissions</a>
-        <a href="contact.html">Contact</a>
-        <a href="donate.html" class="nav-donate">❤ Donate</a>
-        <a href="admissions.html" class="btn-apply">Apply Now</a>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
       </div>
-    </div>
-  </nav>
-  <section class="page-hero"><div class="container"><h1>About Murogolo</h1><p>A community school rooted in African warmth.</p></div></section>
-  <section class="section section-cream">
+      <div class="logo-text">
+        <span class="logo-title">Murogolo</span>
+        <span class="logo-subtitle">Primary School</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About Us</a>
+      <a href="academics.html" class="nav-link">Academics</a>
+      <a href="activities.html" class="nav-link">Activities</a>
+      <a href="admissions.html" class="nav-link">Admissions</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="donate.html" class="nav-link" style="color:var(--secondary)">Donate</a>
+    </nav>
+    <button id="mobile-menu-toggle" class="mobile-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="academics.html" class="mobile-nav-link">Academics</a>
+    <a href="activities.html" class="mobile-nav-link">Activities</a>
+    <a href="admissions.html" class="mobile-nav-link">Admissions</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <a href="donate.html" class="mobile-nav-link" style="color:var(--secondary)">Donate</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
     <div class="container">
-      <div class="grid2" style="gap:64px;align-items:start">
-        <div style="padding-top:48px">
-          <h2 class="heading serif">Our Background</h2>
-          <div class="divider"></div>
-          <div style="display:flex;flex-direction:column;gap:24px;font-size:1.1rem;color:var(--muted);line-height:1.8">
-            <p>Located in the heart of Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo, Murogolo Primary School stands as a beacon of hope and opportunity for our local children.</p>
-            <p>We cater to learners from Grade R through Grade 7, providing a crucial foundation for their lifelong educational journey. Our school is more than just a building; it is a community hub where children are nurtured, challenged, and supported to become the leaders of tomorrow.</p>
-          </div>
+      <h1 class="page-title">About Us</h1>
+      <p class="page-desc">Discover the history, mission, and dedicated team behind Murogolo Primary School in Ha Muila.</p>
+    </div>
+  </div>
+
+  <section class="section section-white">
+    <div class="container">
+      <h2 class="section-title">Our <span class="highlight">Background</span></h2>
+      <p class="section-subtitle">Rooted in the heart of Ha Muila Village, Limpopo</p>
+      <div class="grid-2">
+        <div>
+          <p style="font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:20px">Murogolo Primary School has been a cornerstone of education for the Ha Muila community for decades. We started with a simple vision: to ensure every child has access to quality basic education near their home.</p>
+          <p style="font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:20px">As a government-funded No-Fee school, we proudly serve learners from Grade R through Grade 7, following the official CAPS curriculum under the Limpopo Department of Education.</p>
+          <p style="font-size:16px;color:var(--text-muted);line-height:1.8">Our school is governed by an active School Governing Body (SGB) that works closely with parents, educators, and local community leaders to continuously improve our facilities and learning environment.</p>
         </div>
-        <div style="margin-top:-48px">
-          <div style="border-radius:0 80px 0 80px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.15);aspect-ratio:4/5">
-            <img src="images/learning.png" alt="Children Learning" style="width:100%;height:100%;object-fit:cover">
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <div class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="card-title">Academic Excellence</div>
+            <div class="card-desc">Our dedicated educators are committed to unlocking the potential of every learner, encouraging them to strive for greatness.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="card-title">Community Partnership</div>
+            <div class="card-desc">We actively collaborate with parents, guardians, and local leaders, knowing that education is a shared responsibility.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="card-title">Deeply Rooted</div>
+            <div class="card-desc">We celebrate our African heritage and local culture, drawing strength and pride from our community in Ha Muila.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section section-green">
-    <div class="container" style="text-align:center;max-width:900px">
-      <div style="font-size:3rem;margin-bottom:24px;opacity:.5">★</div>
-      <p style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.5rem);font-style:italic;line-height:1.4">"Education is the most powerful weapon which you can use to change the world."</p>
-    </div>
-  </section>
+
   <section class="section section-light">
     <div class="container">
-      <h2 class="heading serif" style="max-width:700px;line-height:1.2;margin-bottom:64px">We believe in holistic education that shapes character alongside intellect.</h2>
-      <div class="grid2" style="gap:48px 80px">
-        <div style="display:flex;gap:28px;align-items:start">
-          <div style="font-size:2.5rem;margin-top:4px">💚</div>
-          <div><h3 class="serif" style="font-size:1.6rem;font-weight:700;margin-bottom:10px">Nurturing Environment</h3><p style="color:var(--muted);font-size:1.05rem;line-height:1.75">We provide a safe, inclusive, and deeply caring atmosphere where every child feels valued and respected.</p></div>
-        </div><div style="display:flex;gap:28px;align-items:start">
-          <div style="font-size:2.5rem;margin-top:4px">⭐</div>
-          <div><h3 class="serif" style="font-size:1.6rem;font-weight:700;margin-bottom:10px">Academic Excellence</h3><p style="color:var(--muted);font-size:1.05rem;line-height:1.75">Our dedicated educators are committed to unlocking the potential of every learner, encouraging them to strive for greatness.</p></div>
-        </div><div style="display:flex;gap:28px;align-items:start">
-          <div style="font-size:2.5rem;margin-top:4px">📍</div>
-          <div><h3 class="serif" style="font-size:1.6rem;font-weight:700;margin-bottom:10px">Deeply Rooted</h3><p style="color:var(--muted);font-size:1.05rem;line-height:1.75">We celebrate our African heritage and local culture, drawing strength and pride from our community.</p></div>
-        </div><div style="display:flex;gap:28px;align-items:start">
-          <div style="font-size:2.5rem;margin-top:4px">👥</div>
-          <div><h3 class="serif" style="font-size:1.6rem;font-weight:700;margin-bottom:10px">Community Partnership</h3><p style="color:var(--muted);font-size:1.05rem;line-height:1.75">We actively collaborate with parents, guardians, and local leaders, knowing that education is a shared responsibility.</p></div>
+      <h2 class="section-title" style="text-align:center;margin-bottom:8px">Our Core <span class="highlight">Values</span></h2>
+      <p class="section-subtitle" style="text-align:center">The principles that guide everything we do</p>
+      <div class="grid-3" style="margin-top:0">
+        <div class="card" style="text-align:center">
+          <div class="card-icon" style="margin:0 auto 20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="card-title">Respect</div>
+          <div class="card-desc">Treating every learner, educator, and community member with dignity and care.</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="card-icon" style="margin:0 auto 20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="card-title">Integrity</div>
+          <div class="card-desc">Acting honestly and ethically in all aspects of school life and learning.</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="card-icon" style="margin:0 auto 20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="card-title">Excellence</div>
+          <div class="card-desc">Striving for the highest standards in academics, conduct, and personal development.</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="card-icon" style="margin:0 auto 20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="card-title">Responsibility</div>
+          <div class="card-desc">Taking ownership of our actions and their impact on the school community.</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="card-icon" style="margin:0 auto 20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="card-title">Teamwork</div>
+          <div class="card-desc">Collaborating with parents, learners, educators, and community to achieve shared goals.</div>
+        </div>
+        <div class="card" style="text-align:center">
+          <div class="card-icon" style="margin:0 auto 20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+          </div>
+          <div class="card-title">Discipline</div>
+          <div class="card-desc">Maintaining a structured, focused learning environment that helps learners thrive.</div>
         </div>
       </div>
     </div>
   </section>
-  <section class="section section-green" style="border-top:16px solid var(--gold)">
-    <div class="container" style="display:flex;gap:64px;align-items:center;flex-wrap:wrap">
-      <div style="flex:1;min-width:240px">
-        <div style="font-size:4rem;margin-bottom:20px">👥</div>
-        <h2 class="serif" style="font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1.1">Our Village,<br>Our School</h2>
-      </div>
-      <div style="flex:2;min-width:280px;border-left:6px solid rgba(255,255,255,.2);padding-left:48px">
-        <p style="font-family:'Playfair Display',serif;font-size:1.4rem;font-style:italic;line-height:1.6;opacity:.9">Murogolo Primary School is deeply embedded in Ha Muila Village. We rely on the strength of our School Governing Body (SGB) and local community members who volunteer their time, resources, and wisdom to improve our facilities and support our learners.</p>
+
+  <section class="section section-primary">
+    <div class="container">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 style="font-size:32px;font-weight:800;color:white;margin-bottom:16px">Our Village, Our School</h2>
+          <p style="font-size:16px;color:rgba(255,255,255,0.85);line-height:1.8;margin-bottom:24px">Murogolo Primary School is deeply embedded in Ha Muila Village. We rely on the strength of our School Governing Body (SGB) and local community members who volunteer their time, resources, and wisdom to improve our facilities and support our learners.</p>
+          <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:24px;border:1px solid rgba(255,255,255,0.15)">
+            <div style="font-size:13px;font-weight:700;color:var(--secondary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Location</div>
+            <div style="font-size:16px;color:white">Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:24px;border:1px solid rgba(255,255,255,0.15)">
+            <div style="font-size:13px;font-weight:700;color:var(--secondary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">School Type</div>
+            <div style="font-size:16px;color:white">Public No-Fee Primary School — Grade R to Grade 7</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:24px;border:1px solid rgba(255,255,255,0.15)">
+            <div style="font-size:13px;font-weight:700;color:var(--secondary);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Governing Body</div>
+            <div style="font-size:16px;color:white">Active SGB with strong parent and community involvement</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <footer class="footer"><div class="footer-inner"><div><div class="footer-logo">Murogolo Primary School</div><p class="footer-motto">"Learning Today, Leading Tomorrow."</p></div><div class="footer-info"><p>📍 Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo</p><p>📞 082 668 8165 &nbsp;|&nbsp; Mon–Fri: 07:30–14:30</p><p style="margin-top:8px;opacity:.5;font-size:12px">© 2025 Murogolo Primary School</p></div></div></footer>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelector('.nav-links');
-    if (!links) return;
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-    document.addEventListener('click', function(e) {
-      if (links.classList.contains('open') && !links.contains(e.target) && !e.target.closest('.nav-toggle')) {
-        links.classList.remove('open');
-      }
-    });
-  });
-  </script>
-<button class="back-to-top" id="backToTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+</main>
 
-  <script>
-  (function(){
-    const btn = document.getElementById('backToTop');
-    if (!btn) return;
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 400) btn.classList.add('show'); else btn.classList.remove('show');
-    });
-  })();
-  </script>
-</body></html>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-title">Murogolo Primary</h3>
+        <p class="footer-desc">Providing quality foundation, intermediate, and senior phase education to the community of Ha Muila since its establishment.</p>
+      </div>
+      <div>
+        <h3 class="footer-title">Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Ha Muila, Kwaaidraai, Tshitale,<br>Makhado, Limpopo</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18L6.5 2a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.5 9.09a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16c.06 0 .12 0 .18-.01z"/></svg>
+          <span>082 668 8165</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">School Hours</h3>
+        <div class="hours-table">
+          <div class="hours-row"><span>Mon – Thu:</span><span>07:30 – 14:30</span></div>
+          <div class="hours-row"><span>Friday:</span><span>07:30 – 13:00</span></div>
+          <div class="hours-row"><span class="hours-closed">Weekends:</span><span class="hours-closed">Closed</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Murogolo Primary School. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

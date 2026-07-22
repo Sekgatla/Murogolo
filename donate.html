@@ -1,226 +1,184 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate — Murogolo Primary School</title>
-    <meta name="description" content="Support Murogolo Primary School with a donation — help provide books, uniforms, meals and sports equipment for our learners.">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="canonical" href="https://sekgatla.github.io/Murogolo/donate.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Donate — Murogolo Primary School">
-    <meta property="og:description" content="Support Murogolo Primary School with a donation — help provide books, uniforms, meals and sports equipment for our learners.">
-    <meta property="og:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
-    <meta property="og:url" content="https://sekgatla.github.io/Murogolo/donate.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Donate — Murogolo Primary School">
-    <meta name="twitter:description" content="Support Murogolo Primary School with a donation — help provide books, uniforms, meals and sports equipment for our learners.">
-    <meta name="twitter:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Support Murogolo Primary School learners in Ha Muila Village, Limpopo. Every donation makes a real difference.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="canonical" href="https://sekgatla.github.io/Murogolo/donate.html">
+  <meta property="og:title" content="Donate — Murogolo Primary School">
+  <meta property="og:image" content="https://sekgatla.github.io/Murogolo/images/opengraph.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "School",
-    "name": "Murogolo Primary School",
-    "description": "A community primary school serving Grade R to Grade 7 learners in Ha Muila Village, Limpopo, South Africa.",
-    "url": "https://sekgatla.github.io/Murogolo/",
-    "logo": "https://sekgatla.github.io/Murogolo/images/favicon.svg",
-    "image": "https://sekgatla.github.io/Murogolo/images/opengraph.jpg",
-    "telephone": "+27826688165",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ha Muila Village, Kwaaidraai",
-      "addressLocality": "Tshitale, Makhado",
-      "addressRegion": "Limpopo",
-      "addressCountry": "ZA"
-    },
-    "openingHours": "Mo-Fr 07:30-14:30"
-  }
-  </script>
-</head><body style="background:#f7f4ee">
-  <nav class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <div class="nav-logo">🏫</div>
-        <div><div class="nav-name">Murogolo</div><div class="nav-sub">PRIMARY SCHOOL</div></div>
-      </a>
-      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
-      <div class="nav-links">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="academics.html">Academics</a>
-        <a href="activities.html">Activities</a><a href="admissions.html">Admissions</a><a href="contact.html">Contact</a>
-        <a href="donate.html" class="active nav-donate">❤ Donate</a><a href="admissions.html" class="btn-apply">Apply Now</a>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
       </div>
+      <div class="logo-text">
+        <span class="logo-title">Murogolo</span>
+        <span class="logo-subtitle">Primary School</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="academics.html" class="nav-link">Academics</a>
+      <a href="activities.html" class="nav-link">Activities</a>
+      <a href="admissions.html" class="nav-link">Admissions</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="donate.html" class="nav-link active" style="color:var(--secondary)">Donate</a>
+    </nav>
+    <button id="mobile-menu-toggle" class="mobile-toggle">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About Us</a>
+    <a href="academics.html" class="mobile-nav-link">Academics</a>
+    <a href="activities.html" class="mobile-nav-link">Activities</a>
+    <a href="admissions.html" class="mobile-nav-link">Admissions</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+    <a href="donate.html" class="mobile-nav-link" style="color:var(--secondary)">Donate</a>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-title">Support Our Learners</h1>
+      <p class="page-desc">Your generosity directly improves the lives of children in Ha Muila Village, Limpopo.</p>
     </div>
-  </nav>
-  <section style="background:#1B2F6B;position:relative;overflow:hidden">
-    <div style="position:absolute;right:-80px;top:-80px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(245,194,0,.1);pointer-events:none"></div>
-    <div class="container" style="padding:80px 24px 60px;position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center" id="donateHeroGrid">
-      <div>
-        <span style="display:inline-block;background:#c9a227;color:#111f4d;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 14px;border-radius:4px;margin-bottom:24px">Every rand reaches a child</span>
-        <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:900;color:#fff;line-height:1.08;margin-bottom:24px">Give a child a<br><span style="color:#c9a227">fighting chance.</span></h1>
-        <p style="color:rgba(255,255,255,.65);font-size:16px;line-height:1.75;max-width:420px">Murogolo Primary School runs on community support. Books, uniforms, meals, sports — none of it happens without people like you stepping up.</p>
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        
-        <div style="background:rgba(245,194,0,.1);border:1px solid rgba(245,194,0,.3);border-radius:8px;padding:22px 18px">
-          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">Grade R–7</p>
-          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Full primary journey</p>
-        </div>
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(245,194,0,.3);border-radius:8px;padding:22px 18px">
-          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">8</p>
-          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Learning areas taught</p>
-        </div>
-        <div style="background:rgba(245,194,0,.1);border:1px solid rgba(245,194,0,.3);border-radius:8px;padding:22px 18px">
-          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">100%</p>
-          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Community school</p>
-        </div>
-        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(245,194,0,.3);border-radius:8px;padding:22px 18px">
-          <p style="font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#c9a227;margin:0">Ha Muila</p>
-          <p style="font-size:12px;color:rgba(255,255,255,.55);margin-top:4px">Village, Limpopo</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
-  <section class="container" style="padding:64px 24px">
-    <div style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:start" id="donateFormGrid">
-      <div>
-        <h2 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:#111f4d;margin-bottom:6px">How much are you giving?</h2>
-        <p style="font-size:13px;color:#6b7280;margin-bottom:20px">Pick an amount or type your own below.</p>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px">
-          <button type="button" onclick="selectAmount(50,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R50</button><button type="button" onclick="selectAmount(100,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R100</button><button type="button" onclick="selectAmount(150,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R150</button><button type="button" onclick="selectAmount(300,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R300</button><button type="button" onclick="selectAmount(500,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R500</button><button type="button" onclick="selectAmount(1000,this)" class="amount-btn" style="padding:14px 8px;border-radius:6px;border:2px solid #e5e7eb;background:#fff;color:#111f4d;font-weight:700;font-size:18px;cursor:pointer;font-family:'Playfair Display',serif">R1000</button>
-        </div>
-        <div style="position:relative;margin-bottom:36px">
-          <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);font-weight:800;color:#9ca3af;font-size:17px">R</span>
-          <input type="number" min="10" placeholder="Other Amount" id="customAmount" style="width:100%;padding:15px 16px 15px 34px;border:2px solid #e5e7eb;border-radius:6px;font-size:16px;font-weight:600;outline:none;background:#fff;color:#111f4d;box-sizing:border-box">
-        </div>
-
-        <h2 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:#111f4d;margin-bottom:18px">Payment Method</h2>
-        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px">
-          
-          <button type="button" onclick="selectMethod(this)" class="method-btn" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px 16px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;cursor:pointer">
-            <span style="font-size:22px">💳</span><span style="font-weight:700;font-size:15px;color:#374151">Credit / Debit</span><span style="font-size:12px;color:#9ca3af">Visa, Mastercard</span>
-          </button>
-          <button type="button" onclick="selectMethod(this)" class="method-btn" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px 16px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;cursor:pointer">
-            <span style="font-size:22px">🏦</span><span style="font-weight:700;font-size:15px;color:#374151">Instant EFT</span><span style="font-size:12px;color:#9ca3af">Secure bank transfer</span>
-          </button>
-          <button type="button" onclick="selectMethod(this)" class="method-btn" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px 16px;border-radius:8px;border:2px solid #e5e7eb;background:#fff;cursor:pointer">
-            <span style="font-size:22px">📱</span><span style="font-weight:700;font-size:15px;color:#374151">SnapScan / Zapper</span><span style="font-size:12px;color:#9ca3af">Scan & pay instantly</span>
-          </button>
-        </div>
-
-        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px">
-          <input type="text" required placeholder="Full Name" id="donorName" style="padding:14px 16px;border:2px solid #e5e7eb;border-radius:6px;font-size:15px;outline:none;background:#fff;color:#111f4d">
-          <input type="email" required placeholder="Email Address" id="donorEmail" style="padding:14px 16px;border:2px solid #e5e7eb;border-radius:6px;font-size:15px;outline:none;background:#fff;color:#111f4d">
-        </div>
-
-        <button type="button" onclick="submitDonation()" style="width:100%;padding:18px 24px;background:#1B2F6B;color:#fff;font-weight:800;font-size:17px;border-radius:8px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px">Proceed to Secure Payment →</button>
-        <div style="display:flex;align-items:center;justify-content:center;gap:7px;margin-top:14px">
-          <span style="font-size:12px;color:#6b7280">🔒 Secure 256-bit encrypted payment processing</span>
-        </div>
-        <div id="thankYou" style="display:none;background:#1B2F6B;border-radius:12px;padding:56px 40px;text-align:center;margin-top:20px">
-          <div style="width:72px;height:72px;border-radius:50%;background:rgba(245,194,0,.15);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:32px">✓</div>
-          <h2 style="font-family:'Playfair Display',serif;font-size:30px;font-weight:900;color:#fff;margin-bottom:12px" id="thankYouName">Thank you.</h2>
-          <p style="color:rgba(255,255,255,.65);font-size:16px;line-height:1.7;margin-bottom:24px" id="thankYouMsg"></p>
-          <p style="font-family:'Playfair Display',serif;font-style:italic;color:#c9a227;font-size:17px">"Learning Today, Leading Tomorrow."</p>
-        </div>
-      </div>
-
-      <div style="display:flex;flex-direction:column;gap:24px">
-        <div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #1B2F6B;border-radius:10px;padding:28px">
-          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:800;color:#1B2F6B;margin-bottom:16px">School Bank Account</h3>
-          <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Bank:</span><span style="font-weight:700;color:#111f4d">FNB (First National Bank)</span></div><div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Acc Name:</span><span style="font-weight:700;color:#111f4d">Murogolo Primary School</span></div><div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Acc Number:</span><span style="font-weight:700;color:#111f4d">62345678901</span></div><div style="display:flex;gap:12px;font-size:14px"><span style="color:#6b7280;min-width:96px">Branch Code:</span><span style="font-weight:700;color:#111f4d">250655</span></div>
+  <section class="section section-white">
+    <div class="container">
+      <div class="grid-2" style="align-items:start">
+        <div>
+          <h2 class="section-title">Why Your <span class="highlight">Support Matters</span></h2>
+          <p style="font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:24px">Murogolo Primary School is a No-Fee government school, meaning we rely on community generosity to provide learners with resources beyond the basics.</p>
+          <p style="font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:32px">Many of our learners come from households with limited income. Every rand donated goes directly toward improving the quality of education and life at our school.</p>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+              </div>
+              <div>
+                <h3>Books & Stationery</h3>
+                <p>Help us keep every learner equipped with the learning materials they need.</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div>
+                <h3>Sports Equipment</h3>
+                <p>Donate soccer balls, netball kits, and athletics gear for our school teams.</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <h3>School Uniforms</h3>
+                <p>Help ensure every child attends school with dignity and a sense of belonging.</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <h3>Facility Improvements</h3>
+                <p>Contribute to classroom maintenance, gardens, and general school infrastructure.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div style="background:#eef5ee;border-left:4px solid #16a34a;border-radius:10px;padding:24px 28px">
-          <h3 style="font-family:'Playfair Display',serif;font-size:17px;font-weight:800;color:#15532e;margin-bottom:10px">Resource Donations</h3>
-          <p style="font-size:14px;color:#374151;line-height:1.65">We also welcome donations of books, stationery, sports equipment, and school uniforms. Please contact the office for physical drop-offs.</p>
-          <p style="font-size:12px;color:#6b7280;margin-top:14px">📚 Books · ✏️ Stationery · ⚽ Sports · 👕 Uniforms</p>
-        </div>
-        <div style="background:#fff;border-radius:10px;padding:28px;border:1px solid #e5e7eb">
-          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:#111f4d;margin-bottom:20px">Your Impact</h3>
-          <div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
-            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">1</div>
-            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Learning Materials</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Providing textbooks and stationery for our learners.</p></div>
-          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
-            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">2</div>
-            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Sporting Equipment</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Upgrading our soccer and netball facilities.</p></div>
-          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
-            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">3</div>
-            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">School Nutrition</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Supporting our daily meals for learners in need.</p></div>
-          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
-            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">4</div>
-            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Infrastructure</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Maintaining classrooms and school buildings.</p></div>
-          </div><div style="display:flex;gap:16px;padding:16px 0;border-bottom:1px solid #f3f4f6">
-            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">5</div>
-            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">School Uniforms</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Clothing learners who cannot afford uniforms.</p></div>
-          </div><div style="display:flex;gap:16px;padding:16px 0;">
-            <div style="min-width:36px;height:36px;border-radius:50%;background:#e8edf8;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;color:#1B2F6B">6</div>
-            <div><p style="font-weight:700;font-size:14px;color:#111f4d;margin-bottom:2px">Digital Access</p><p style="font-size:13px;color:#6b7280;line-height:1.5">Bringing technology and learning tools to classrooms.</p></div>
+        <div>
+          <h2 class="section-title">How to <span class="highlight">Donate</span></h2>
+          <p class="section-subtitle">Reach out to our school directly to arrange your contribution</p>
+          <div class="card" style="margin-bottom:24px">
+            <div style="font-size:13px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px">Contact to Donate</div>
+            <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+              <div style="width:48px;height:48px;background:rgba(40,83,156,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--primary);flex-shrink:0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18L6.5 2a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.5 9.09a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16c.06 0 .12 0 .18-.01z"/></svg>
+              </div>
+              <div>
+                <div style="font-size:14px;color:var(--text-muted);margin-bottom:2px">Call or WhatsApp</div>
+                <div style="font-size:20px;font-weight:700;color:var(--primary)">082 668 8165</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:16px">
+              <div style="width:48px;height:48px;background:rgba(40,83,156,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--primary);flex-shrink:0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div style="font-size:14px;color:var(--text-muted);margin-bottom:2px">Visit Us In Person</div>
+                <div style="font-size:15px;font-weight:600;color:var(--text)">Ha Muila, Kwaaidraai, Tshitale</div>
+              </div>
+            </div>
+          </div>
+          <div class="notice">
+            <div class="notice-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <p>You can also donate goods directly — books, uniforms, sports equipment, and stationery are always gratefully received at the school office.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <script>
-  let selAmount=null, selMethod=null;
-  function selectAmount(a,el){
-    selAmount=a; document.getElementById('customAmount').value='';
-    document.querySelectorAll('.amount-btn').forEach(b=>{b.style.border='2px solid #e5e7eb';b.style.background='#fff';b.style.color='#111f4d'});
-    el.style.border='2px solid #1B2F6B'; el.style.background='#1B2F6B'; el.style.color='#fff';
-  }
-  function selectMethod(el){
-    selMethod=el;
-    document.querySelectorAll('.method-btn').forEach(b=>{b.style.border='2px solid #e5e7eb';b.style.background='#fff'});
-    el.style.border='2px solid #1B2F6B'; el.style.background='#e8edf8';
-  }
-  function submitDonation(){
-    const custom=document.getElementById('customAmount').value;
-    const amt=selAmount || (custom?Number(custom):null);
-    const name=document.getElementById('donorName').value;
-    const email=document.getElementById('donorEmail').value;
-    if(!amt||!selMethod||!name||!email){ alert('Please complete all fields, choose an amount and payment method.'); return; }
-    document.getElementById('thankYouName').textContent='Thank you, '+name.split(' ')[0]+'.';
-    document.getElementById('thankYouMsg').innerHTML='Your donation of <strong style="color:#c9a227">R'+amt+'</strong> is making a real difference. Our team will be in touch with payment confirmation shortly.';
-    document.getElementById('thankYou').style.display='block';
-    document.getElementById('thankYou').scrollIntoView({behavior:'smooth'});
-  }
-  </script>
-
-  <section style="background:#111f4d;padding:40px 32px;text-align:center">
-    <p style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff">Together, we can give every child in Ha Muila Village the education they deserve.</p>
+  <section class="section section-primary" style="text-align:center">
+    <div class="container">
+      <h2 style="font-size:32px;font-weight:800;color:white;margin-bottom:16px">Together, We Can Give Every Child<br>the Education They Deserve</h2>
+      <p style="font-size:18px;color:rgba(255,255,255,0.85);max-width:700px;margin:0 auto 32px">Your generosity transforms lives in Ha Muila Village. Thank you for standing with our learners.</p>
+      <a href="contact.html" class="btn btn-secondary">Contact the School</a>
+    </div>
   </section>
+</main>
 
-  <style>
-  @media(max-width:768px){ #donateHeroGrid, #donateFormGrid { grid-template-columns:1fr!important; } }
-  </style>
-  <footer class="footer"><div class="footer-inner"><div><div class="footer-logo">Murogolo Primary School</div><p class="footer-motto">"Learning Today, Leading Tomorrow."</p></div><div class="footer-info"><p>📍 Ha Muila Village, Kwaaidraai, Tshitale, Makhado, Limpopo</p><p>📞 082 668 8165</p></div></div></footer>
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelector('.nav-links');
-    if (!links) return;
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-    document.addEventListener('click', function(e) {
-      if (links.classList.contains('open') && !links.contains(e.target) && !e.target.closest('.nav-toggle')) {
-        links.classList.remove('open');
-      }
-    });
-  });
-  </script>
-<button class="back-to-top" id="backToTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-  <script>
-  (function(){
-    const btn = document.getElementById('backToTop');
-    if (!btn) return;
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 400) btn.classList.add('show'); else btn.classList.remove('show');
-    });
-  })();
-  </script>
-</body></html>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-title">Murogolo Primary</h3>
+        <p class="footer-desc">Providing quality foundation, intermediate, and senior phase education to the community of Ha Muila since its establishment.</p>
+      </div>
+      <div>
+        <h3 class="footer-title">Contact Us</h3>
+        <div class="footer-contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Ha Muila, Kwaaidraai, Tshitale,<br>Makhado, Limpopo</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18L6.5 2a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.5 9.09a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.5 16c.06 0 .12 0 .18-.01z"/></svg>
+          <span>082 668 8165</span>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">School Hours</h3>
+        <div class="hours-table">
+          <div class="hours-row"><span>Mon – Thu:</span><span>07:30 – 14:30</span></div>
+          <div class="hours-row"><span>Friday:</span><span>07:30 – 13:00</span></div>
+          <div class="hours-row"><span class="hours-closed">Weekends:</span><span class="hours-closed">Closed</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Murogolo Primary School. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
