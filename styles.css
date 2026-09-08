@@ -595,4 +595,15 @@ h1, h2, h3, h4, h5, h6 {
   .hero-content::before { margin-bottom: 18px; }
   .nav-link.active::after { display: none; }
   .page-header::after { right: -10px; bottom: -22px; font-size: 150px; }
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .grid-2 > *,
+  .grid-3 > *,
+  .grid-4 > * {
+    min-width: 0;
+  }
 }
