@@ -491,3 +491,108 @@ h1, h2, h3, h4, h5, h6 {
   .uniform-card { flex-direction: column; }
   .admission-layout > div:last-child { padding-top: 0; }
 }
+
+/* The final pass: less landing page, more lived-in school. */
+.hero {
+  min-height: 610px;
+  padding: 78px 0 88px;
+  background: var(--paper);
+  color: var(--primary);
+  overflow: hidden;
+}
+.hero-bg {
+  left: 53%;
+  top: 28px;
+  width: 43%;
+  height: calc(100% - 56px);
+  border: 12px solid var(--card-bg);
+  outline: 1px solid var(--border);
+  object-position: center;
+  box-shadow: 14px 14px 0 rgba(234,179,8,.32);
+}
+.hero-overlay { display: none; }
+.hero-content {
+  max-width: 560px;
+  padding-top: 18px;
+  color: var(--primary);
+}
+.hero-content::before {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 6px;
+  margin-bottom: 24px;
+  background: var(--secondary);
+}
+.hero-title { color: var(--primary); max-width: 520px; }
+.hero-title .highlight { color: var(--gold-deep); }
+.hero-desc { color: var(--text); max-width: 500px; }
+.hero .btn-white {
+  background: var(--primary);
+  color: white;
+}
+.hero .btn-white:hover { background: var(--primary-dark); }
+.hero .btn-outline.border-white {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.hero .btn-outline.border-white:hover {
+  background: var(--primary);
+  color: white;
+}
+.hero .badge {
+  background: transparent;
+  color: var(--gold-deep);
+  border-left: 3px solid var(--secondary);
+  padding: 0 0 0 10px;
+  margin-bottom: 18px;
+  letter-spacing: .08em;
+}
+.card, .message-card, .uniform-card, .bulletin {
+  box-shadow: none;
+  transition: none;
+}
+.card:hover { transform: none; box-shadow: 4px 4px 0 rgba(15,44,89,.06); }
+.nav-link { position: relative; }
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: var(--secondary);
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.page-header {
+  position: relative;
+  overflow: hidden;
+}
+.page-header::after {
+  content: "M";
+  position: absolute;
+  right: 8%;
+  bottom: -44px;
+  color: rgba(255,255,255,.06);
+  font: 700 220px/1 'Lora', Georgia, serif;
+}
+.photo-banner { border-top: 8px solid var(--secondary); border-bottom: 8px solid var(--primary); }
+.photo-banner-label { font-family: 'Lora', Georgia, serif; font-weight: 600; }
+.bulletin-list li { line-height: 1.6; }
+
+@media (max-width: 767px) {
+  .hero { min-height: auto; padding: 62px 0 30px; }
+  .hero-bg {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: calc(100% - 24px);
+    height: 260px;
+    margin: 46px 12px 0 0;
+    border-width: 8px;
+    box-shadow: 8px 8px 0 rgba(234,179,8,.32);
+  }
+  .hero-content { padding-top: 0; }
+  .hero-content::before { margin-bottom: 18px; }
+  .nav-link.active::after { display: none; }
+  .page-header::after { right: -10px; bottom: -22px; font-size: 150px; }
+}
